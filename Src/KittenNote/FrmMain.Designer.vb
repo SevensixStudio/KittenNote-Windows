@@ -25,255 +25,139 @@ Partial Class FrmMain
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
+        Dim ThemeMac1 As Gdu.WinFormUI.Theme.ThemeMac = New Gdu.WinFormUI.Theme.ThemeMac()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
-        Dim ThemeDevExpress4 As Gdu.WinFormUI.Theme.ThemeDevExpress = New Gdu.WinFormUI.Theme.ThemeDevExpress()
-        Dim ButtonColorTable13 As Gdu.WinFormUI.SelfRenderControl.ButtonColorTable = New Gdu.WinFormUI.SelfRenderControl.ButtonColorTable()
-        Dim ButtonColorTable14 As Gdu.WinFormUI.SelfRenderControl.ButtonColorTable = New Gdu.WinFormUI.SelfRenderControl.ButtonColorTable()
-        Dim ButtonColorTable15 As Gdu.WinFormUI.SelfRenderControl.ButtonColorTable = New Gdu.WinFormUI.SelfRenderControl.ButtonColorTable()
-        Dim ButtonColorTable16 As Gdu.WinFormUI.SelfRenderControl.ButtonColorTable = New Gdu.WinFormUI.SelfRenderControl.ButtonColorTable()
-        Me.HTMLEdit = New ICSharpCode.TextEditor.TextEditorControl()
-        Me.MDEdit = New ICSharpCode.TextEditor.TextEditorControl()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.Browser = New System.Windows.Forms.WebBrowser()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Dim ButtonColorTable1 As Gdu.WinFormUI.SelfRenderControl.ButtonColorTable = New Gdu.WinFormUI.SelfRenderControl.ButtonColorTable()
+        Dim ButtonColorTable2 As Gdu.WinFormUI.SelfRenderControl.ButtonColorTable = New Gdu.WinFormUI.SelfRenderControl.ButtonColorTable()
+        Dim ButtonColorTable3 As Gdu.WinFormUI.SelfRenderControl.ButtonColorTable = New Gdu.WinFormUI.SelfRenderControl.ButtonColorTable()
         Me.SuspendLayout()
-        '
-        'HTMLEdit
-        '
-        Me.HTMLEdit.CreateBackupCopy = True
-        Me.HTMLEdit.EnableFolding = False
-        Me.HTMLEdit.Encoding = CType(resources.GetObject("HTMLEdit.Encoding"), System.Text.Encoding)
-        Me.HTMLEdit.Location = New System.Drawing.Point(192, 119)
-        Me.HTMLEdit.Name = "HTMLEdit"
-        Me.HTMLEdit.ShowEOLMarkers = True
-        Me.HTMLEdit.ShowInvalidLines = False
-        Me.HTMLEdit.ShowSpaces = True
-        Me.HTMLEdit.ShowTabs = True
-        Me.HTMLEdit.ShowVRuler = True
-        Me.HTMLEdit.Size = New System.Drawing.Size(227, 135)
-        Me.HTMLEdit.TabIndex = 2
-        '
-        'MDEdit
-        '
-        Me.MDEdit.Encoding = CType(resources.GetObject("MDEdit.Encoding"), System.Text.Encoding)
-        Me.MDEdit.Location = New System.Drawing.Point(2, 86)
-        Me.MDEdit.Name = "MDEdit"
-        Me.MDEdit.ShowEOLMarkers = True
-        Me.MDEdit.ShowInvalidLines = False
-        Me.MDEdit.ShowSpaces = True
-        Me.MDEdit.ShowTabs = True
-        Me.MDEdit.ShowVRuler = True
-        Me.MDEdit.Size = New System.Drawing.Size(154, 293)
-        Me.MDEdit.TabIndex = 1
-        '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Location = New System.Drawing.Point(2, 32)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(647, 25)
-        Me.ToolStrip1.TabIndex = 3
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'Browser
-        '
-        Me.Browser.Location = New System.Drawing.Point(385, 234)
-        Me.Browser.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.Browser.Name = "Browser"
-        Me.Browser.Size = New System.Drawing.Size(121, 110)
-        Me.Browser.TabIndex = 4
-        Me.Browser.WebBrowserShortcutsEnabled = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.White
-        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(3, 57)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(134, 26)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Markdown："
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.White
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(161, 57)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 26)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Html："
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.White
-        Me.Label3.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(319, 56)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 26)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "预览："
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 5
         '
         'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BorderWidth = 2
-        Me.CaptionHeight = 30
-        Me.ClientSize = New System.Drawing.Size(651, 460)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Browser)
-        Me.Controls.Add(Me.ToolStrip1)
-        Me.Controls.Add(Me.HTMLEdit)
-        Me.Controls.Add(Me.MDEdit)
+        Me.ClientSize = New System.Drawing.Size(589, 294)
+        Me.CloseBoxSize = New System.Drawing.Size(16, 16)
+        Me.ControlBoxOffset = New System.Drawing.Point(12, 8)
+        Me.ControlBoxSpace = 6
+        Me.MaxBoxSize = New System.Drawing.Size(16, 16)
+        Me.MinBoxSize = New System.Drawing.Size(16, 16)
         Me.MinimumSize = New System.Drawing.Size(160, 60)
         Me.Name = "FrmMain"
-        Me.ShadowWidth = 10
-        Me.ShowShadow = True
-        Me.SideResizeWidth = 4
-        Me.Text = "FrmMain"
-        ThemeDevExpress4.BorderWidth = 2
-        ThemeDevExpress4.CaptionBackColorBottom = System.Drawing.Color.White
-        ThemeDevExpress4.CaptionBackColorTop = System.Drawing.Color.White
-        ThemeDevExpress4.CaptionHeight = 30
-        ThemeDevExpress4.CaptionTextCenter = True
-        ThemeDevExpress4.CaptionTextColor = System.Drawing.Color.FromArgb(CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
-        ThemeDevExpress4.CloseBoxBackImageHover = Nothing
-        ThemeDevExpress4.CloseBoxBackImageNormal = Nothing
-        ThemeDevExpress4.CloseBoxBackImagePressed = Nothing
-        ButtonColorTable13.BackColorHover = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
-        ButtonColorTable13.BackColorNormal = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer))
-        ButtonColorTable13.BackColorPressed = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(61, Byte), Integer))
-        ButtonColorTable13.BorderColorHover = System.Drawing.Color.Empty
-        ButtonColorTable13.BorderColorNormal = System.Drawing.Color.Empty
-        ButtonColorTable13.BorderColorPressed = System.Drawing.Color.Empty
-        ButtonColorTable13.ForeColorHover = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        ButtonColorTable13.ForeColorNormal = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        ButtonColorTable13.ForeColorPressed = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        ThemeDevExpress4.CloseBoxColor = ButtonColorTable13
-        ThemeDevExpress4.CloseBoxSize = New System.Drawing.Size(37, 17)
-        ThemeDevExpress4.ControlBoxOffset = New System.Drawing.Point(8, 8)
-        ThemeDevExpress4.ControlBoxSpace = 2
-        ThemeDevExpress4.DrawCaptionIcon = True
-        ThemeDevExpress4.DrawCaptionText = True
-        ThemeDevExpress4.FormBackColor = System.Drawing.Color.White
-        ThemeDevExpress4.FormBorderInmostColor = System.Drawing.Color.FromArgb(CType(CType(93, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer))
-        ThemeDevExpress4.FormBorderInnerColor = System.Drawing.Color.White
-        ThemeDevExpress4.FormBorderOutterColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(144, Byte), Integer), CType(CType(198, Byte), Integer))
-        ThemeDevExpress4.IconLeftMargin = 2
-        ThemeDevExpress4.IconSize = New System.Drawing.Size(16, 16)
-        ThemeDevExpress4.MaxBoxBackImageHover = Nothing
-        ThemeDevExpress4.MaxBoxBackImageNormal = Nothing
-        ThemeDevExpress4.MaxBoxBackImagePressed = Nothing
-        ButtonColorTable14.BackColorHover = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(179, Byte), Integer))
-        ButtonColorTable14.BackColorNormal = System.Drawing.Color.Transparent
-        ButtonColorTable14.BackColorPressed = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(161, Byte), Integer))
-        ButtonColorTable14.BorderColorHover = System.Drawing.Color.Empty
-        ButtonColorTable14.BorderColorNormal = System.Drawing.Color.Empty
-        ButtonColorTable14.BorderColorPressed = System.Drawing.Color.Empty
-        ButtonColorTable14.ForeColorHover = System.Drawing.Color.White
-        ButtonColorTable14.ForeColorNormal = System.Drawing.Color.Black
-        ButtonColorTable14.ForeColorPressed = System.Drawing.Color.White
-        ThemeDevExpress4.MaxBoxColor = ButtonColorTable14
-        ThemeDevExpress4.MaxBoxSize = New System.Drawing.Size(25, 17)
-        ThemeDevExpress4.Mdi_AlwaysShowListAllBtn = True
-        ThemeDevExpress4.Mdi_BarBackColor = System.Drawing.Color.LightSkyBlue
-        ThemeDevExpress4.Mdi_BarBorderColor = System.Drawing.Color.Red
-        ThemeDevExpress4.Mdi_BarBottomRegionBackColor = System.Drawing.Color.White
-        ThemeDevExpress4.Mdi_BarBottomRegionHeight = 3
-        ThemeDevExpress4.Mdi_BarLeftPadding = 3
-        ThemeDevExpress4.Mdi_BarMargin = New System.Windows.Forms.Padding(6, 38, 100, 0)
-        ThemeDevExpress4.Mdi_BarRightPadding = 100
-        ThemeDevExpress4.Mdi_DrawBarBackground = False
-        ThemeDevExpress4.Mdi_DrawBarBorder = False
-        ThemeDevExpress4.Mdi_ListAllBtnAlign = Gdu.WinFormUI.SelfRenderControl.BarButtonAlignmentType.Left
-        ThemeDevExpress4.Mdi_ListAllBtnBottomSpace = 7
-        ButtonColorTable15.BackColorHover = System.Drawing.Color.HotPink
-        ButtonColorTable15.BackColorNormal = System.Drawing.Color.LightPink
-        ButtonColorTable15.BackColorPressed = System.Drawing.Color.DeepPink
-        ButtonColorTable15.BorderColorHover = System.Drawing.Color.Empty
-        ButtonColorTable15.BorderColorNormal = System.Drawing.Color.Empty
-        ButtonColorTable15.BorderColorPressed = System.Drawing.Color.Empty
-        ButtonColorTable15.ForeColorHover = System.Drawing.Color.Black
-        ButtonColorTable15.ForeColorNormal = System.Drawing.Color.Black
-        ButtonColorTable15.ForeColorPressed = System.Drawing.Color.Black
-        ThemeDevExpress4.Mdi_ListAllBtnColor = ButtonColorTable15
-        ThemeDevExpress4.Mdi_ListAllBtnLeftSpace = 4
-        ThemeDevExpress4.Mdi_ListAllBtnSize = New System.Drawing.Size(36, 18)
-        ThemeDevExpress4.Mdi_NewTabBtnBottomSpace = 7
-        ButtonColorTable16.BackColorHover = System.Drawing.Color.HotPink
-        ButtonColorTable16.BackColorNormal = System.Drawing.Color.LightPink
-        ButtonColorTable16.BackColorPressed = System.Drawing.Color.DeepPink
-        ButtonColorTable16.BorderColorHover = System.Drawing.Color.Empty
-        ButtonColorTable16.BorderColorNormal = System.Drawing.Color.Empty
-        ButtonColorTable16.BorderColorPressed = System.Drawing.Color.Empty
-        ButtonColorTable16.ForeColorHover = System.Drawing.Color.Black
-        ButtonColorTable16.ForeColorNormal = System.Drawing.Color.Black
-        ButtonColorTable16.ForeColorPressed = System.Drawing.Color.Black
-        ThemeDevExpress4.Mdi_NewTabBtnColor = ButtonColorTable16
-        ThemeDevExpress4.Mdi_NewTabBtnLeftSpace = 4
-        ThemeDevExpress4.Mdi_NewTabBtnSize = New System.Drawing.Size(25, 18)
-        ThemeDevExpress4.Mdi_ShowNewTabBtn = True
-        ThemeDevExpress4.Mdi_ShowTabIcon = True
-        ThemeDevExpress4.Mdi_TabActiveBackColorBottom = System.Drawing.Color.White
-        ThemeDevExpress4.Mdi_TabActiveBackColorTop = System.Drawing.Color.White
-        ThemeDevExpress4.Mdi_TabAndTabSpace = -8
-        ThemeDevExpress4.Mdi_TabDeactiveBackColorBottom = System.Drawing.Color.DarkGray
-        ThemeDevExpress4.Mdi_TabDeactiveBackColorTop = System.Drawing.Color.LightGray
-        ThemeDevExpress4.Mdi_TabHeight = 26
-        ThemeDevExpress4.Mdi_TabHeightActive = 26
-        ThemeDevExpress4.Mdi_TabInnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        ThemeDevExpress4.Mdi_TabMaxWidth = 360
-        ThemeDevExpress4.Mdi_TabMinWidth = 90
-        ThemeDevExpress4.Mdi_TabNormalWidth = 180
-        ThemeDevExpress4.Mdi_TabOutterBorderColor = System.Drawing.Color.Gray
-        ThemeDevExpress4.Mdi_TabSlopeWidth = 8
-        ThemeDevExpress4.Mdi_TabTopSpace = 2
-        ThemeDevExpress4.Mdi_UseMsgToActivateChild = True
-        ThemeDevExpress4.MinBoxBackImageHover = Nothing
-        ThemeDevExpress4.MinBoxBackImageNormal = Nothing
-        ThemeDevExpress4.MinBoxBackImagePressed = Nothing
-        ThemeDevExpress4.MinBoxColor = ButtonColorTable14
-        ThemeDevExpress4.MinBoxSize = New System.Drawing.Size(25, 17)
-        ThemeDevExpress4.Radius = 8
-        ThemeDevExpress4.ResBoxBackImageHover = Nothing
-        ThemeDevExpress4.ResBoxBackImageNormal = Nothing
-        ThemeDevExpress4.ResBoxBackImagePressed = Nothing
-        ThemeDevExpress4.RoundedStyle = Gdu.WinFormUI.MyGraphics.RoundStyle.None
-        ThemeDevExpress4.SetClientInset = False
-        ThemeDevExpress4.ShadowAValueDark = 80
-        ThemeDevExpress4.ShadowAValueLight = 0
-        ThemeDevExpress4.ShadowColor = System.Drawing.Color.Black
-        ThemeDevExpress4.ShadowWidth = 10
-        ThemeDevExpress4.ShowShadow = True
-        ThemeDevExpress4.SideResizeWidth = 4
-        ThemeDevExpress4.TextLeftMargin = 2
-        ThemeDevExpress4.UseDefaultTopRoundingFormRegion = False
-        ThemeDevExpress4.UseShadowToResize = False
-        Me.XTheme = ThemeDevExpress4
+        Me.Round = Gdu.WinFormUI.MyGraphics.RoundStyle.Top
+        Me.Text = "KittenNote-Beta"
+        ThemeMac1.BorderWidth = 2
+        ThemeMac1.CaptionBackColorBottom = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer), CType(CType(205, Byte), Integer))
+        ThemeMac1.CaptionBackColorTop = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
+        ThemeMac1.CaptionHeight = 28
+        ThemeMac1.CaptionTextCenter = True
+        ThemeMac1.CaptionTextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        ThemeMac1.CloseBoxBackImageHover = CType(resources.GetObject("ThemeMac1.CloseBoxBackImageHover"), System.Drawing.Image)
+        ThemeMac1.CloseBoxBackImageNormal = CType(resources.GetObject("ThemeMac1.CloseBoxBackImageNormal"), System.Drawing.Image)
+        ThemeMac1.CloseBoxBackImagePressed = CType(resources.GetObject("ThemeMac1.CloseBoxBackImagePressed"), System.Drawing.Image)
+        ButtonColorTable1.BackColorHover = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(244, Byte), Integer))
+        ButtonColorTable1.BackColorNormal = System.Drawing.Color.Empty
+        ButtonColorTable1.BackColorPressed = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(166, Byte), Integer))
+        ButtonColorTable1.BorderColorHover = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(101, Byte), Integer))
+        ButtonColorTable1.BorderColorNormal = System.Drawing.Color.Empty
+        ButtonColorTable1.BorderColorPressed = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(101, Byte), Integer))
+        ButtonColorTable1.ForeColorHover = System.Drawing.Color.Black
+        ButtonColorTable1.ForeColorNormal = System.Drawing.Color.Black
+        ButtonColorTable1.ForeColorPressed = System.Drawing.Color.Black
+        ThemeMac1.CloseBoxColor = ButtonColorTable1
+        ThemeMac1.CloseBoxSize = New System.Drawing.Size(16, 16)
+        ThemeMac1.ControlBoxOffset = New System.Drawing.Point(12, 8)
+        ThemeMac1.ControlBoxSpace = 6
+        ThemeMac1.DrawCaptionIcon = True
+        ThemeMac1.DrawCaptionText = True
+        ThemeMac1.FormBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        ThemeMac1.FormBorderInmostColor = System.Drawing.Color.FromArgb(CType(CType(93, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(219, Byte), Integer))
+        ThemeMac1.FormBorderInnerColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        ThemeMac1.FormBorderOutterColor = System.Drawing.Color.FromArgb(CType(CType(101, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(101, Byte), Integer))
+        ThemeMac1.IconLeftMargin = 2
+        ThemeMac1.IconSize = New System.Drawing.Size(16, 16)
+        ThemeMac1.MaxBoxBackImageHover = CType(resources.GetObject("ThemeMac1.MaxBoxBackImageHover"), System.Drawing.Image)
+        ThemeMac1.MaxBoxBackImageNormal = CType(resources.GetObject("ThemeMac1.MaxBoxBackImageNormal"), System.Drawing.Image)
+        ThemeMac1.MaxBoxBackImagePressed = CType(resources.GetObject("ThemeMac1.MaxBoxBackImagePressed"), System.Drawing.Image)
+        ThemeMac1.MaxBoxColor = ButtonColorTable1
+        ThemeMac1.MaxBoxSize = New System.Drawing.Size(16, 16)
+        ThemeMac1.Mdi_AlwaysShowListAllBtn = True
+        ThemeMac1.Mdi_BarBackColor = System.Drawing.Color.LightSkyBlue
+        ThemeMac1.Mdi_BarBorderColor = System.Drawing.Color.Red
+        ThemeMac1.Mdi_BarBottomRegionBackColor = System.Drawing.Color.White
+        ThemeMac1.Mdi_BarBottomRegionHeight = 3
+        ThemeMac1.Mdi_BarLeftPadding = 3
+        ThemeMac1.Mdi_BarMargin = New System.Windows.Forms.Padding(6, 38, 100, 0)
+        ThemeMac1.Mdi_BarRightPadding = 100
+        ThemeMac1.Mdi_DrawBarBackground = False
+        ThemeMac1.Mdi_DrawBarBorder = False
+        ThemeMac1.Mdi_ListAllBtnAlign = Gdu.WinFormUI.SelfRenderControl.BarButtonAlignmentType.Left
+        ThemeMac1.Mdi_ListAllBtnBottomSpace = 7
+        ButtonColorTable2.BackColorHover = System.Drawing.Color.HotPink
+        ButtonColorTable2.BackColorNormal = System.Drawing.Color.LightPink
+        ButtonColorTable2.BackColorPressed = System.Drawing.Color.DeepPink
+        ButtonColorTable2.BorderColorHover = System.Drawing.Color.Empty
+        ButtonColorTable2.BorderColorNormal = System.Drawing.Color.Empty
+        ButtonColorTable2.BorderColorPressed = System.Drawing.Color.Empty
+        ButtonColorTable2.ForeColorHover = System.Drawing.Color.Black
+        ButtonColorTable2.ForeColorNormal = System.Drawing.Color.Black
+        ButtonColorTable2.ForeColorPressed = System.Drawing.Color.Black
+        ThemeMac1.Mdi_ListAllBtnColor = ButtonColorTable2
+        ThemeMac1.Mdi_ListAllBtnLeftSpace = 4
+        ThemeMac1.Mdi_ListAllBtnSize = New System.Drawing.Size(36, 18)
+        ThemeMac1.Mdi_NewTabBtnBottomSpace = 7
+        ButtonColorTable3.BackColorHover = System.Drawing.Color.HotPink
+        ButtonColorTable3.BackColorNormal = System.Drawing.Color.LightPink
+        ButtonColorTable3.BackColorPressed = System.Drawing.Color.DeepPink
+        ButtonColorTable3.BorderColorHover = System.Drawing.Color.Empty
+        ButtonColorTable3.BorderColorNormal = System.Drawing.Color.Empty
+        ButtonColorTable3.BorderColorPressed = System.Drawing.Color.Empty
+        ButtonColorTable3.ForeColorHover = System.Drawing.Color.Black
+        ButtonColorTable3.ForeColorNormal = System.Drawing.Color.Black
+        ButtonColorTable3.ForeColorPressed = System.Drawing.Color.Black
+        ThemeMac1.Mdi_NewTabBtnColor = ButtonColorTable3
+        ThemeMac1.Mdi_NewTabBtnLeftSpace = 4
+        ThemeMac1.Mdi_NewTabBtnSize = New System.Drawing.Size(25, 18)
+        ThemeMac1.Mdi_ShowNewTabBtn = True
+        ThemeMac1.Mdi_ShowTabIcon = True
+        ThemeMac1.Mdi_TabActiveBackColorBottom = System.Drawing.Color.White
+        ThemeMac1.Mdi_TabActiveBackColorTop = System.Drawing.Color.White
+        ThemeMac1.Mdi_TabAndTabSpace = -8
+        ThemeMac1.Mdi_TabDeactiveBackColorBottom = System.Drawing.Color.DarkGray
+        ThemeMac1.Mdi_TabDeactiveBackColorTop = System.Drawing.Color.LightGray
+        ThemeMac1.Mdi_TabHeight = 26
+        ThemeMac1.Mdi_TabHeightActive = 26
+        ThemeMac1.Mdi_TabInnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        ThemeMac1.Mdi_TabMaxWidth = 360
+        ThemeMac1.Mdi_TabMinWidth = 90
+        ThemeMac1.Mdi_TabNormalWidth = 180
+        ThemeMac1.Mdi_TabOutterBorderColor = System.Drawing.Color.Gray
+        ThemeMac1.Mdi_TabSlopeWidth = 8
+        ThemeMac1.Mdi_TabTopSpace = 2
+        ThemeMac1.Mdi_UseMsgToActivateChild = True
+        ThemeMac1.MinBoxBackImageHover = CType(resources.GetObject("ThemeMac1.MinBoxBackImageHover"), System.Drawing.Image)
+        ThemeMac1.MinBoxBackImageNormal = CType(resources.GetObject("ThemeMac1.MinBoxBackImageNormal"), System.Drawing.Image)
+        ThemeMac1.MinBoxBackImagePressed = CType(resources.GetObject("ThemeMac1.MinBoxBackImagePressed"), System.Drawing.Image)
+        ThemeMac1.MinBoxColor = ButtonColorTable1
+        ThemeMac1.MinBoxSize = New System.Drawing.Size(16, 16)
+        ThemeMac1.Radius = 8
+        ThemeMac1.ResBoxBackImageHover = CType(resources.GetObject("ThemeMac1.ResBoxBackImageHover"), System.Drawing.Image)
+        ThemeMac1.ResBoxBackImageNormal = CType(resources.GetObject("ThemeMac1.ResBoxBackImageNormal"), System.Drawing.Image)
+        ThemeMac1.ResBoxBackImagePressed = CType(resources.GetObject("ThemeMac1.ResBoxBackImagePressed"), System.Drawing.Image)
+        ThemeMac1.RoundedStyle = Gdu.WinFormUI.MyGraphics.RoundStyle.Top
+        ThemeMac1.SetClientInset = False
+        ThemeMac1.ShadowAValueDark = 80
+        ThemeMac1.ShadowAValueLight = 0
+        ThemeMac1.ShadowColor = System.Drawing.Color.Black
+        ThemeMac1.ShadowWidth = 6
+        ThemeMac1.ShowShadow = False
+        ThemeMac1.SideResizeWidth = 6
+        ThemeMac1.TextLeftMargin = 2
+        ThemeMac1.UseDefaultTopRoundingFormRegion = False
+        ThemeMac1.UseShadowToResize = False
+        Me.XTheme = ThemeMac1
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents HTMLEdit As ICSharpCode.TextEditor.TextEditorControl
-    Friend WithEvents MDEdit As ICSharpCode.TextEditor.TextEditorControl
-    Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents Browser As WebBrowser
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Timer1 As Timer
 End Class
