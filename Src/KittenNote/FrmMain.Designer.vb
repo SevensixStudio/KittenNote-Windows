@@ -37,10 +37,11 @@ Partial Class FrmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BorderWidth = 2
-        Me.ClientSize = New System.Drawing.Size(589, 294)
+        Me.ClientSize = New System.Drawing.Size(672, 390)
         Me.CloseBoxSize = New System.Drawing.Size(16, 16)
         Me.ControlBoxOffset = New System.Drawing.Point(12, 8)
         Me.ControlBoxSpace = 6
+        Me.IsMdiContainer = True
         Me.MaxBoxSize = New System.Drawing.Size(16, 16)
         Me.MinBoxSize = New System.Drawing.Size(16, 16)
         Me.MinimumSize = New System.Drawing.Size(160, 60)

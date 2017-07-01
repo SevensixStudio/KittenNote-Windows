@@ -96,6 +96,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <DefineTrace>true</DefineTrace>
@@ -132,10 +133,10 @@
       <HintPath>C:\Users\Administrator\Desktop\类库\GduWinFormUI\GduWinFormUI\GduWinFormUI\bin\Debug\GduWinFormUI.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.TextEditor">
-      <HintPath>C:\Users\Administrator\Desktop\ICSharpCode.TextEditor.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Desktop\类库\ICSharpCode.TextEditor.dll</HintPath>
     </Reference>
     <Reference Include="MarkdownSharp">
-      <HintPath>C:\Users\Administrator\Desktop\MarkdownSharp.dll</HintPath>
+      <HintPath>C:\Users\Administrator\Desktop\类库\MarkdownSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -162,6 +163,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCodeAera.Designer.vb">
+      <DependentUpon>FrmCodeAera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCodeAera.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Highlighter.vb">
       <SubType>UserControl</SubType>
     </Compile>
@@ -189,6 +196,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmCodeAera.resx">
+      <DependentUpon>FrmCodeAera.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.vb</DependentUpon>
     </EmbeddedResource>

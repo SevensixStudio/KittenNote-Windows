@@ -6,6 +6,7 @@ Public Class FrmMain
     End Sub
 
     Private Sub FrmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        FrmCodeAera.Show()
 
     End Sub
 End Class
