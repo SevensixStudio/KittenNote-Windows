@@ -15,7 +15,9 @@
             Me.ShowEOLMarkers = False
             Me.ShowInvalidLines = False
             Me.Size = New System.Drawing.Size(348, 287)
+            Me.Show
             Me.ResumeLayout(False)
+            
         End Sub
 
         Public Shadows Event KeyDown()
